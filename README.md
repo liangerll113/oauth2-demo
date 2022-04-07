@@ -28,11 +28,10 @@ curl --location --request POST 'http://localhost:8080/oauth/token' --header 'Aut
 ```
 
 postman截图
-
-![image-20220407211102662](C:\Users\metinkong\AppData\Roaming\Typora\typora-user-images\image-20220407211102662.png)
+![image-20220407211102662](https://user-images.githubusercontent.com/41110645/162208162-dc5326fe-69ea-4fb1-b048-d65fa8141879.png)
 
 
 
 注意请求头需要填写获取授权的client_id和client_secret，由于认证方式依赖spring security，因此需要按此方式填写
+![image-20220407211217228](https://user-images.githubusercontent.com/41110645/162208205-599dd7e0-9bcb-4f8c-8abe-a5aeb9ec4b7c.png)
 
-![image-20220407211217228](C:\Users\metinkong\AppData\Roaming\Typora\typora-user-images\image-20220407211217228.png)
