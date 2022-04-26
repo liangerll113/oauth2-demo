@@ -18,7 +18,7 @@ public class MyResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
-        http.antMatcher("/hello").authorizeRequests()
+        http.antMatcher("/hello/*").authorizeRequests()
                 .antMatchers(HttpMethod.GET, "/hello/read").access("#oauth2.hasScope('read')")
                 .antMatchers(HttpMethod.GET, "/hello/write").access("#oauth2.hasScope('write')");
     }
