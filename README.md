@@ -5,7 +5,7 @@
 #### 1.启动项目
 
 #### 2.浏览器访问 
-http://localhost:8080/oauth/authorize?response_type=code&client_id=client&redirect_uri=http://www.xwdx.site
+http://localhost:8666/oauth2/oauth/authorize?response_type=code&client_id=client&redirect_uri=http://www.xwdx.site
 
 会自动跳转到到登录页面，随意输入用户名，密码123
 
@@ -21,10 +21,10 @@ http://www.xwdx.site/?code=3HcqVW
 
 推荐使用postman
 
-url http://localhost:8080/oauth/token
+url http://localhost:8666/oauth2/oauth/token
 
 ```shell
-curl --location --request POST 'http://localhost:8080/oauth/token' --header 'Authorization: Basic Y2xpZW50OnNlY3JldA==' --header 'Content-Type: application/x-www-form-urlencoded' --data-urlencode 'code=ISyyMM' --data-urlencode grant_type=authorization_code' --data-urlencode 'redirect_uri=http://www.xwdx.site'
+curl --location --request POST 'http://localhost:8666/oauth2/oauth/token' --header 'Authorization: Basic Y2xpZW50OnNlY3JldA==' --header 'Content-Type: application/x-www-form-urlencoded' --data-urlencode 'code=ISyyMM' --data-urlencode grant_type=authorization_code' --data-urlencode 'redirect_uri=http://www.xwdx.site'
 ```
 
 postman截图
